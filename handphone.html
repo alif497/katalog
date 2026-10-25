@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Galaxy | Katalog Electronic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="header"><a class="logo" href="index.html">KATALOG <span>ELECTRONIC</span></a></header>
+<main class="container">
+    <a class="backlink" href="index.html">‹ Kembali ke katalog</a>
+    <article class="detailcard" data-id="4" data-name="Samsung Galaxy S26 Series" data-price="14499000" data-image="images/gambar-4.png">
+        <img class="detailimage" src="gambar 4.png" alt="Samsung Galaxy S26 Series">
+        <p class="productbrand">SAMSUNG</p>
+        <h1>Galaxy S26 Series</h1>
+        <p class="productprice">Rp14.499.000</p>
+        <p>Ponsel Samsung Galaxy untuk komunikasi dan aktivitas sehari-hari. Periksa model dan kapasitas penyimpanan sebelum membeli.</p>
+        <label for="quantity">Jumlah produk</label>
+        <input class="quantityinput" id="quantity" type="number" min="1" max="99" value="1">
+        <button class="primarybutton addtocart">Tambah ke Keranjang</button>
+    </article>
+</main>
+<script>document.querySelector(".addtocart").addEventListener("click", function () { addProduct(this); });</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sony BRAVIA | Katalog Electronic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="header"><a class="logo" href="index.html">KATALOG <span>ELECTRONIC</span></a></header>
+<main class="container">
+    <a class="backlink" href="index.html">‹ Kembali ke katalog</a>
+    <article class="detailcard" data-id="2" data-name="Sony BRAVIA 9 II 85 Inci" data-price="82209000" data-image="images/gambar-2.png">
+        <img class="detailimage" src="gambar 2.png" alt="Televisi Sony BRAVIA 9 II 85 inci">
+        <p class="productbrand">SONY</p>
+        <h1>BRAVIA 9 II 85 Inci</h1>
+        <p class="productprice">Rp82.209.000</p>
+        <p>Televisi Sony BRAVIA berukuran 85 inci. Periksa spesifikasi, ketersediaan, dan garansi sebelum membeli.</p>
+        <label for="quantity">Jumlah produk</label>
+        <input class="quantityinput" id="quantity" type="number" min="1" max="99" value="1">
+        <button class="primarybutton addtocart">Tambah ke Keranjang</button>
+    </article>
+</main>
+<script>document.querySelector(".addtocart").addEventListener("click", function () { addProduct(this); });</script>
+</body>
+</html>

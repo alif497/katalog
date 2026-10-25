@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Cooker Philips | Katalog Electronic</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<header class="header"><a class="logo" href="index.html">KATALOG <span>ELECTRONIC</span></a></header>
+<main class="container">
+    <a class="backlink" href="index.html">‹ Kembali ke katalog</a>
+    <article class="detailcard" data-id="5" data-name="Philips Rice Cooker" data-price="499000" data-image="images/gambar-5.png">
+        <img class="detailimage" src="gambar 5.png" alt="Rice cooker Philips">
+        <p class="productbrand">PHILIPS</p>
+        <h1>Rice Cooker</h1>
+        <p class="productprice">Rp499.000</p>
+        <p>Penanak nasi untuk membantu menyiapkan makanan sehari-hari. Periksa kapasitas dan fitur modelnya.</p>
+        <label for="quantity">Jumlah produk</label>
+        <input class="quantityinput" id="quantity" type="number" min="1" max="99" value="1">
+        <button class="primarybutton addtocart">Tambah ke Keranjang</button>
+    </article>
+</main>
+<script>document.querySelector(".addtocart").addEventListener("click", function () { addProduct(this); });</script>
+</body>
+</html>
