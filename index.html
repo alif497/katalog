@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -9,172 +10,178 @@
 </head>
 <body>
 
-<header class="header">
-    <img src="Alif Elektronik Store Neon Badge.png" alt="Logo Toko Elektronik" class="logo">
-    <a class="logo" href="index.html">KATALOG <span>ELECTRONIK</span></a>
-    <button id="cartButton" class="cartbutton">
-        🛒 Keranjang <span id="cartCount">0</span>
-    </button>
-</header>
+    <header class="header">
+        <img src="Alif Elektronik Store Neon Badge.png"
+             alt="Logo Toko Elektronik"
+             class="store-logo">
 
-<main class="container">
+        <a class="logo" href="index.html">
+            KATALOG <span>ELECTRONIK</span>
+        </a>
 
-    <section id="catalogPage">
-        <div class="welcome">
-            <p class="eyebrow">SELAMAT DATANG</p>
-            <h1>Temukan elektronik pilihanmu.</h1>
-            <p class="deskripsi">Berbagai kebutuhan elektronik dalam satu katalog.</p>
-        </div>
+        <button id="cartButton" class="cartbutton">
+            🛒 Keranjang <span id="cartCount">0</span>
+        </button>
+    </header>
 
-        <div class="searchbox">
-            <input id="searchInput" type="search" placeholder="Cari produk elektronik...">
-        </div>
+    <main class="container">
 
-        <h2>Kategori</h2>
+        <section id="catalogPage">
+            <div class="welcome">
+                <p class="eyebrow">SELAMAT DATANG</p>
+                <h1>Temukan elektronik pilihanmu.</h1>
+                <p class="deskripsi">Berbagai kebutuhan elektronik dalam satu katalog.</p>
+            </div>
 
-        <div class="categories">
-            <button class="category active" data-category="Semua">Semua</button>
-            <button class="category" data-category="Laptop">Laptop</button>
-            <button class="category" data-category="TV & HP">TV & HP</button>
-            <button class="category" data-category="Dapur">Dapur</button>
-            <button class="category" data-category="Rumah Tangga">Rumah Tangga</button>
-        </div>
+            <div class="searchbox">
+                <input id="searchInput" type="search" placeholder="Cari produk elektronik...">
+            </div>
 
-        <div class="sectionheading">
-            <h2>Produk Elektronik</h2>
+            <h2>Kategori</h2>
 
-            <select id="sortSelect">
-                <option value="default">Pilihan</option>
-                <option value="low">Harga termurah</option>
-                <option value="high">Harga termahal</option>
-                <option value="az">Nama A-Z</option>
-            </select>
-        </div>
+            <div class="categories">
+                <button class="category active" data-category="Semua">Semua</button>
+                <button class="category" data-category="Laptop">Laptop</button>
+                <button class="category" data-category="TV & HP">TV & HP</button>
+                <button class="category" data-category="Dapur">Dapur</button>
+                <button class="category" data-category="Rumah Tangga">Rumah Tangga</button>
+            </div>
 
-        <p id="resultCount"></p>
+            <div class="sectionheading">
+                <h2>Produk Elektronik</h2>
 
-        <div id="productGrid" class="productgrid">
+                <select id="sortSelect">
+                    <option value="default">Pilihan</option>
+                    <option value="low">Harga termurah</option>
+                    <option value="high">Harga termahal</option>
+                    <option value="az">Nama A-Z</option>
+                </select>
+            </div>
 
-            <article class="productcard" data-category="Laptop" data-name="Laptop ThinkPad" data-price="6200000">
-                <img class="productimage" src="gambar 1.png" alt="Laptop Lenovo ThinkPad">
-                <div class="productinfo">
-                    <p class="productbrand">LENOVO</p>
-                    <h3>Laptop ThinkPad</h3>
-                    <p class="productprice">Rp6.200.000</p>
-                    <a class="primarybutton" href="laptop.html">Lihat Detail</a>
-                </div>
-            </article>
+            <p id="resultCount"></p>
 
-            <article class="productcard" data-category="TV & HP" data-name="Sony BRAVIA 9 II" data-price="82209000">
-                <img class="productimage" src="gambar 2.png" alt="Televisi Sony BRAVIA 9 II">
-                <div class="productinfo">
-                    <p class="productbrand">SONY</p>
-                    <h3>BRAVIA 9 II 85 Inci</h3>
-                    <p class="productprice">Rp82.209.000</p>
-                    <a class="primarybutton" href="televisi.html">Lihat Detail</a>
-                </div>
-            </article>
+            <div id="productGrid" class="productgrid">
 
-            <article class="productcard" data-category="Rumah Tangga" data-name="Kulkas Dua Pintu" data-price="3850000">
-                <img class="productimage" src="gambar 3.png" alt="Kulkas dua pintu LG">
-                <div class="productinfo">
-                    <p class="productbrand">LG</p>
-                    <h3>Kulkas Dua Pintu</h3>
-                    <p class="productprice">Rp3.850.000</p>
-                    <a class="primarybutton" href="kulkas.html">Lihat Detail</a>
-                </div>
-            </article>
+                <article class="productcard" data-category="Laptop" data-name="Laptop ThinkPad" data-price="6200000">
+                    <img class="productimage" src="gambar 1.png" alt="Laptop Lenovo ThinkPad">
+                    <div class="productinfo">
+                        <p class="productbrand">LENOVO</p>
+                        <h3>Laptop ThinkPad</h3>
+                        <p class="productprice">Rp6.200.000</p>
+                        <a class="primarybutton" href="laptop.html">Lihat Detail</a>
+                    </div>
+                </article>
 
-            <article class="productcard" data-category="TV & HP" data-name="Samsung Galaxy S26" data-price="14499000">
-                <img class="productimage" src="gambar 4.png" alt="Samsung Galaxy S26">
-                <div class="productinfo">
-                    <p class="productbrand">SAMSUNG</p>
-                    <h3>Galaxy S26 Series</h3>
-                    <p class="productprice">Rp14.499.000</p>
-                    <a class="primarybutton" href="handphone.html">Lihat Detail</a>
-                </div>
-            </article>
+                <article class="productcard" data-category="TV & HP" data-name="Sony BRAVIA 9 II" data-price="82209000">
+                    <img class="productimage" src="gambar 2.png" alt="Televisi Sony BRAVIA 9 II">
+                    <div class="productinfo">
+                        <p class="productbrand">SONY</p>
+                        <h3>BRAVIA 9 II 85 Inci</h3>
+                        <p class="productprice">Rp82.209.000</p>
+                        <a class="primarybutton" href="televisi.html">Lihat Detail</a>
+                    </div>
+                </article>
 
-            <article class="productcard" data-category="Dapur" data-name="Philips Rice Cooker" data-price="499000">
-                <img class="productimage" src="gambar 5.png" alt="Rice cooker Philips">
-                <div class="productinfo">
-                    <p class="productbrand">PHILIPS</p>
-                    <h3>Rice Cooker</h3>
-                    <p class="productprice">Rp499.000</p>
-                    <a class="primarybutton" href="ricecooker.html">Lihat Detail</a>
-                </div>
-            </article>
+                <article class="productcard" data-category="Rumah Tangga" data-name="Kulkas Dua Pintu" data-price="3850000">
+                    <img class="productimage" src="gambar 3.png" alt="Kulkas dua pintu LG">
+                    <div class="productinfo">
+                        <p class="productbrand">LG</p>
+                        <h3>Kulkas Dua Pintu</h3>
+                        <p class="productprice">Rp3.850.000</p>
+                        <a class="primarybutton" href="kulkas.html">Lihat Detail</a>
+                    </div>
+                </article>
 
-            <article class="productcard" data-category="Rumah Tangga" data-name="Daikin Breeze AC" data-price="3900000">
-                <img class="productimage" src="gambar 6.png" alt="AC Daikin Breeze 0.5 PK">
-                <div class="productinfo">
-                    <p class="productbrand">DAIKIN</p>
-                    <h3>AC Breeze 0.5 PK</h3>
-                    <p class="productprice">Rp3.900.000</p>
-                    <a class="primarybutton" href="ac.html">Lihat Detail</a>
-                </div>
-            </article>
+                <article class="productcard" data-category="TV & HP" data-name="Samsung Galaxy S26" data-price="14499000">
+                    <img class="productimage" src="gambar 4.png" alt="Samsung Galaxy S26">
+                    <div class="productinfo">
+                        <p class="productbrand">SAMSUNG</p>
+                        <h3>Galaxy S26 Series</h3>
+                        <p class="productprice">Rp14.499.000</p>
+                        <a class="primarybutton" href="handphone.html">Lihat Detail</a>
+                    </div>
+                </article>
 
-            <article class="productcard" data-category="Rumah Tangga" data-name="Mesin Cuci Top Loading" data-price="2900000">
-                <img class="productimage" src="gambar 7.png" alt="Mesin cuci bukaan atas">
-                <div class="productinfo">
-                    <p class="productbrand">MESIN CUCI</p>
-                    <h3>Mesin Cuci Top Loading</h3>
-                    <p class="productprice">Rp2.900.000</p>
-                    <a class="primarybutton" href="mesin cuci.html">Lihat Detail</a>
-                </div>
-            </article>
+                <article class="productcard" data-category="Dapur" data-name="Philips Rice Cooker" data-price="499000">
+                    <img class="productimage" src="gambar 5.png" alt="Rice cooker Philips">
+                    <div class="productinfo">
+                        <p class="productbrand">PHILIPS</p>
+                        <h3>Rice Cooker</h3>
+                        <p class="productprice">Rp499.000</p>
+                        <a class="primarybutton" href="ricecooker.html">Lihat Detail</a>
+                    </div>
+                </article>
 
-            <article class="productcard" data-category="Dapur" data-name="Sharp Microwave 23 Liter" data-price="1200000">
-                <img class="productimage" src="gambar 8.png" alt="Microwave Sharp 23 liter">
-                <div class="productinfo">
-                    <p class="productbrand">SHARP</p>
-                    <h3>Microwave 23 Liter</h3>
-                    <p class="productprice">Rp1.200.000</p>
-                    <a class="primarybutton" href="microwave.html">Lihat Detail</a>
-                </div>
-            </article>
+                <article class="productcard" data-category="Rumah Tangga" data-name="Daikin Breeze AC" data-price="3900000">
+                    <img class="productimage" src="gambar 6.png" alt="AC Daikin Breeze 0.5 PK">
+                    <div class="productinfo">
+                        <p class="productbrand">DAIKIN</p>
+                        <h3>AC Breeze 0.5 PK</h3>
+                        <p class="productprice">Rp3.900.000</p>
+                        <a class="primarybutton" href="ac.html">Lihat Detail</a>
+                    </div>
+                </article>
 
-            <article class="productcard" data-category="Rumah Tangga" data-name="Stick Vacuum Cleaner" data-price="1000000">
-                <img class="productimage" src="gambar 9.png" alt="Stick vacuum cleaner">
-                <div class="productinfo">
-                    <p class="productbrand">VACUUM CLEANER</p>
-                    <h3>Stick Vacuum Cleaner</h3>
-                    <p class="productprice">Rp1.000.000</p>
-                    <a class="primarybutton" href="vacum.html">Lihat Detail</a>
-                </div>
-            </article>
+                <article class="productcard" data-category="Rumah Tangga" data-name="Mesin Cuci Top Loading" data-price="2900000">
+                    <img class="productimage" src="gambar 7.png" alt="Mesin cuci bukaan atas">
+                    <div class="productinfo">
+                        <p class="productbrand">MESIN CUCI</p>
+                        <h3>Mesin Cuci Top Loading</h3>
+                        <p class="productprice">Rp2.900.000</p>
+                        <a class="primarybutton" href="mesin cuci.html">Lihat Detail</a>
+                    </div>
+                </article>
 
-        </div>
+                <article class="productcard" data-category="Dapur" data-name="Sharp Microwave 23 Liter" data-price="1200000">
+                    <img class="productimage" src="gambar 8.png" alt="Microwave Sharp 23 liter">
+                    <div class="productinfo">
+                        <p class="productbrand">SHARP</p>
+                        <h3>Microwave 23 Liter</h3>
+                        <p class="productprice">Rp1.200.000</p>
+                        <a class="primarybutton" href="microwave.html">Lihat Detail</a>
+                    </div>
+                </article>
 
-        <p id="emptyState" hidden>Produk tidak ditemukan.</p>
-    </section>
+                <article class="productcard" data-category="Rumah Tangga" data-name="Stick Vacuum Cleaner" data-price="1000000">
+                    <img class="productimage" src="gambar 9.png" alt="Stick vacuum cleaner">
+                    <div class="productinfo">
+                        <p class="productbrand">VACUUM CLEANER</p>
+                        <h3>Stick Vacuum Cleaner</h3>
+                        <p class="productprice">Rp1.000.000</p>
+                        <a class="primarybutton" href="vacum.html">Lihat Detail</a>
+                    </div>
+                </article>
 
-    <section id="cartPage" hidden>
-        <div class="sectionheading">
-            <h2>Keranjang Belanja</h2>
-            <button id="backButton" class="outlinebutton">Kembali</button>
-        </div>
+            </div>
 
-        <div id="cartItems"></div>
+            <p id="emptyState" hidden>Produk tidak ditemukan.</p>
+        </section>
 
-        <div class="cartsummary">
-            <strong>Total: <span id="cartTotal">Rp0</span></strong>
-            <button id="checkoutButton" class="primarybutton">Checkout</button>
-        </div>
-    </section>
+        <section id="cartPage" hidden>
+            <div class="sectionheading">
+                <h2>Keranjang Belanja</h2>
+                <button id="backButton" class="outlinebutton">Kembali</button>
+            </div>
 
-</main>
+            <div id="cartItems"></div>
 
-<nav class="bottomnav">
-    <a href="index.html" class="navitem active">⌂ Beranda</a>
-    <a href="#productGrid" class="navitem" id="productTab">▦ Produk</a>
-    <button id="bottomCartButton" class="navitem">🛒 Keranjang</button>
-</nav>
+            <div class="cartsummary">
+                <strong>Total: <span id="cartTotal">Rp0</span></strong>
+                <button id="checkoutButton" class="primarybutton">Checkout</button>
+            </div>
+        </section>
 
-<div class="ucapan">
-    <h2 class="jalan">Terimakasih Sudah Melihat Lihat Serta Sudah Belanja 😆</h2>
-</div>
+    </main>
+
+    <nav class="bottomnav">
+        <a href="index.html" class="navitem active">⌂ Beranda</a>
+        <a href="#productGrid" class="navitem" id="productTab">▦ Produk</a>
+        <button id="bottomCartButton" class="navitem">🛒 Keranjang</button>
+    </nav>
+
+    <div class="ucapan">
+        <h2 class="jalan">Terimakasih Sudah Melihat Lihat Serta Sudah Belanja 😆</h2>
+    </div>
 
 </body>
 </html>
